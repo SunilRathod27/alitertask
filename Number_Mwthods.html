@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var a = "99";
+        var b = " 99 99";
+        var c = "100";
+        var d = 100;
+        var e = 5.555555;
+        var fix = e.toFixed(2); // toFixed() returns a string, with the number written with a specified number of decimals:
+        var precision = e.toPrecision(2); // toPrecision() returns a string, with a number written with a specified length:
+
+
+
+        var num = (Number(a));  // String to Number Convert Use Number() Function 
+        
+        document.write(a+10);
+        
+        document.write("<br>");
+        document.write(num + 10);
+        document.write("<br>");
+        document.write(Number(b));
+        document.write("<br>");
+        document.write(parseInt(c));   // Return Without Decimal ,return only first Number  
+        document.write("<br>");
+        document.write(parseFloat(c)); // Return  With decimal can not  , return only first Number 
+        document.write("<br>");
+        document.write(Number.isFinite(d)); // Return only Finite 
+        document.write("<br>");
+        document.write(Number.isInteger(d)); // Return Number value Not Float value ,float value is return false and interger value is true 
+        document.write("<br>");
+        document.write(fix); 
+        document.write("<br>");
+        document.write(precision); 
+    </script>
+</head>
+<body>
+   <ul>  Number Methods 
+       <li>number ()</li>
+       <li>parseInt ()</li>
+       <li>parseFloat ()</li>
+       <li>isFinite ()</li>
+       <li>isInteger ()</li>
+       <li>toFixed ()</li>
+       <li>toPrecision ()</li>
+   </ul> 
+</body>
+</html>

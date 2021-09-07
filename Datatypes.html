@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2> Data Types </h2>
+<ul>
+    <li id="number"></li>
+    <li id="string"></li>
+    <li id="object"></li>
+    <li id="bigint"></li>
+    <li id="stringadd"></li>
+    <li id="my"></li>
+    <li id="gt"></li>
+</ul>
+<p id="demo"></p>    
+<script>
+    let a = 16;  //NUMBER
+    var b = "Good Morning"; //String
+      
+
+    // Object
+    const person =
+     {
+         firstName:"Sunil",
+        lastName:"Rathods"
+    };   
+    let name = "Sunil";
+    let isGreater = 4 > 1;
+// embed a variable
+alert( `Hello, ${name}!` ); // Hello, John!
+   
+    const bigInt = 1234567890123456789012345678901234567890n;
+     document.getElementById("string").innerHTML = b;
+    document.getElementById("number").innerHTML=a;
+    document.getElementById("object").innerHTML=person.firstName +" "+person.lastName;
+    document.getElementById("bigint").innerHTML = bigInt;
+    document.getElementById("gt").innerHTML= isGreater; // true (the comparison result is "yes")
+    
+
+
+    // no error
+let message = "hello"+ "<br/>" +"Good Morning";  
+// message = 123456;
+    // document.write(message);
+
+    
+
+    document.write(message);
+document.write("<br>",message)
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var str1 = "Hello Aliter";
+        var str2 = 'Hello Aliter';
+        var str3 = `Hello Aliter `;
+
+        function my(say)
+        {
+          return say;
+        }
+
+
+        document.write(str1);
+        document.write(str1+"Good Morning");
+        document.write(`${str1}After Noon`);   // Multiline code Allow , Only For Use Back Tick (``) Not work ("") and ('')
+        document.write(`${my("Hello")} world`);
+        
+
+        var str4 = "Aliter"
+        document.write("<br>");
+        document.write(`Your Name is  :${str4}`);
+        console.log(`Hello
+          good morning`)
+    </script>
+</body>
+</html>

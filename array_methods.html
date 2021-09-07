@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+
+/*The filter() method creates an array filled with all array elements that pass a test (provided by a function).
+
+filter() does not execute the function for empty array elements.
+
+filter() does not change the original array. */
+
+
+        const isEven = (number) => {
+            return number %2 == 0 ;
+           
+        }
+
+        let arr = [1,2,3,4,5];
+        let arr2 = arr.filter(isEven);
+
+        console.log(arr2);
+
+
+        let arr3 = arr.filter((number) =>
+        {
+            return number %2 == 0;
+        });
+        document.write(arr3);
+
+
+
+        /* The forEach() method calls a function once for each element in an array, in order.
+
+forEach() is not executed for array elements without values.*/
+        arr.forEach(number =>
+        {
+            console.log(number);        
+        });
+
+
+        /* The map() method creates a new array with the results of calling a function for every array element.
+
+The map() method calls the provided function once for each element in an array, in order.
+
+map() does not execute the function for empty elements.
+
+map() does not change the original array.*/
+
+// let arr4 = arr.map(number =>
+// {
+//     return number * number;
+// })
+// console.log(arr4);
+// console.log(arr.find(x => x ==4)); // element exist in return not exist in undefinded
+// console.log(arr.findIndex(x => x ==2));// findIndex is return index no 
+
+
+
+
+function Person (fname,lname,age){
+    this.fname = fname;
+    this.lname = lname;
+    this.age = age;
+}
+let persons = [
+        new Person("Rohit", "parmar",24),
+        new Person("Rajiv", "patel",16),
+        new Person("Rahul", "Prajapati",21)
+    ];
+
+
+    console.log(persons.filter(x=> x.age>18));
+
+
+    let persons2 = persons.map(x=>{
+        return new Person(
+            x.fname.toUpperCase(),
+            x.lname.toUpperCase(),
+            x.age
+        );
+    });
+
+    console.log(persons2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

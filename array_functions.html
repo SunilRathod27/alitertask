@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    var  a = ["Sanjay", "Aman", "Rehman", "Karan"]
+    var b = [ "Rahul", "Nirav", "Dhruv"];
+    var c = a.concat(b);
+
+
+    document.write(a + "<br>");
+    a.sort();   //The sort() method sorts an array alphabetically
+    document.write(a + "<br>");
+
+    a.reverse(); //The reverse() method reverses the elements in an array.You can use it to sort an array in descending order
+    document.write(a + "<br>");
+
+    a.pop();    // last value delete
+    document.write(a + "<br><br>");
+
+    a.push("Rahul");  // add new value last
+    document.write(a + "<br><br>");
+
+    a.shift(); // first value delete 
+    document.write(a + "<br><br>");
+
+    a.unshift("vijay"); // first value add 
+    document.write(a + "<br><br>");
+    
+    
+    document.write(c + "<br><br>");
+  
+    // The concat() method concatenates (joins) two or more arrays.
+
+// The concat() method does not change the existing arrays, but returns a new array, containing the values of the joined arrays.
+    var e = a.concat("Rahul","karan");
+    document.write(e + "<br><br>")
+
+    //The join() method returns an array as a string.
+    var d = c.join("<br>");
+    document.write(d + "<br><br>");
+
+    // The slice() method returns selected elements in an array, as a new array.
+
+    var e = c.slice(1,5);
+    document.write(e+ "<br><br>");
+
+    //The splice() method adds and/or removes array elements.
+    a.splice(2,0,"Neha","Himanshu");
+    document.write(a+ "<br><br>");
+    
+</script>
+</head>
+
+<body>
+    
+</body>
+</html>
